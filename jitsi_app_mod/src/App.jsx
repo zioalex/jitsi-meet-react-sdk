@@ -38,10 +38,8 @@ const App = () => {
             updateKnockingParticipants(participants => participants.filter(item => item.id === participant.id));
         });
     };
-    
-    //const toggleMuteAll = () => {
-    //setMuteAll(!muteAll);
-  //};
+
+    // const toggleMuteAll = () => { setMuteAll(!muteAll); };
 
 
     const handleJitsiIFrameRef1 = iframeRef => {
@@ -81,8 +79,8 @@ const App = () => {
         alert('Ready to close...');
     };
 
-    //const generateRoomName = () => `JitsiMeetRoomNo${Math.random() * 100}-${Date.now()}`;
-    const generateRoomName = () => `english`;
+    // const generateRoomName = () => `JitsiMeetRoomNo${Math.random() * 100}-${Date.now()}`;
+    const generateRoomName = () => 'english';
 
     // Multiple instances demo
     const renderNewInstance = () => {
@@ -214,7 +212,7 @@ const App = () => {
                 JitsiMeeting Demo App
             </h1>
             <JitsiMeeting
-		domain = { 'translation.sennsolutions.com' }
+                domain = { 'translation.sennsolutions.com' }
                 roomName = { generateRoomName() }
                 spinner = { renderSpinner }
                 configOverwrite = {{
